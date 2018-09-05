@@ -22,9 +22,7 @@ public class Controller {
 	
 	@Autowired
 	private Repository repository; 
-	
-	
-	
+		
 	
 	@GetMapping
 	public List<Student> list(){
@@ -41,5 +39,7 @@ public class Controller {
 	public Student get(@PathVariable("id") long id) {
 		return repository.getOne(id);
 	}
+	
+	
 
 }
